@@ -32,11 +32,11 @@ Identity and Access Management Service
 ## Usage
 
 ## Build and Run
- 1. Build the files
+ 1. Build the files:
  ```
  tsc --build
  ```
- 2. Run the files
+ 2. Run the files:
  ```
  node build/
  ```
