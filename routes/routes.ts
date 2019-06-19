@@ -1,6 +1,6 @@
 import express from 'express';
 import jwt from 'jsonwebtoken';
-import { User } from './models';
+import { User } from '../models';
 
 export default (app: express.Express) => {
   app.post('/credentials/authenticate', (req, res) => {
