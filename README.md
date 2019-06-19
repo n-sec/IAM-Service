@@ -13,25 +13,25 @@ Identity and Access Management Service
 
 ## Installation
  1. Clone this repository:
- ```
- git clone https://github.com/n-sec/IAM-Service.git
+ ```bash
+ $ git clone https://github.com/n-sec/IAM-Service.git
  ```
  2. Enter the directory:
- ```
- cd IAM-Service
+ ```bash
+ $ cd IAM-Service
  ```
  3. Install and update the packages:
- ```
- npm install
+ ```bash
+ $ npm install
  ```
  2. Add the .env file to the project's root directory:
- ```
- cp env .env
+ ```bash
+ $ cp env .env
  ```
 
 ## Usage
 
-## Build and Run
+## Build and run
  1. Build the files:
  ```
  tsc --build
