@@ -1,8 +1,10 @@
 import express from 'express';
 import mongoose from 'mongoose';
-
+import dotenv from 'dotenv';
 import middlewares from './middlewares';
 import routes from './routes';
+
+dotenv.config();
 
 const app = express();
 
