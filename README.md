@@ -13,19 +13,19 @@ Identity and Access Management Service
 
 ## Installation
  1. Clone this repository:
- ```bash
+ ```
  $ git clone https://github.com/n-sec/IAM-Service.git
  ```
  2. Enter the directory:
- ```bash
+ ```
  $ cd IAM-Service
  ```
  3. Install and update the packages:
- ```bash
+ ```
  $ npm install
  ```
  2. Add the .env file to the project's root directory:
- ```bash
+ ```
  $ cp env .env
  ```
 
