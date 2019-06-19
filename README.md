@@ -34,11 +34,11 @@ Identity and Access Management Service
 ## Build and run
  1. Build the files:
  ```
- tsc --build
+ $ tsc --build
  ```
  2. Run the files:
  ```
- node build/
+ $ node build/
  ```
 
 ### Run on Docker
