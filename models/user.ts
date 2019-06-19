@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 
-const User = mongoose.model('User', new mongoose.Schema({
+export default mongoose.model('User', new mongoose.Schema({
   user: {
     unique: true,
     type: String,
@@ -12,7 +12,3 @@ const User = mongoose.model('User', new mongoose.Schema({
     select: false,
   }
 }));
-
-export {
-  User,
-}
