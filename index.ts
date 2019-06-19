@@ -1,14 +1,12 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import bodyParser from 'body-parser';
 
-import routes from './routes/routes';
+import middlewares from './middlewares';
+import routes from './routes';
 
 const app = express();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
-
+middlewares(app);
 routes(app);
 
 mongoose.connect('mongodb://localhost:27017/credentials', {
