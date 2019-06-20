@@ -1,17 +1,15 @@
 import express from 'express';
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
 import middlewares from './middlewares';
 import routes from './routes';
-
-dotenv.config();
+import env from '@nostjs/dotenv';
 
 const app = express();
 
 middlewares(app);
 routes(app);
 
-mongoose.connect('mongodb://localhost:27017/credentials', {
+mongoose.connect(env.get('MONGODB'), {
   useNewUrlParser: true,
   useCreateIndex: true,
 }).then(() => {
